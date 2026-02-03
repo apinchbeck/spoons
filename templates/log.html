@@ -1,0 +1,32 @@
+<!--
+Template: log.html
+Purpose: Provides a form for users to submit a new energy/task log.
+Usage:
+  Rendered by main_bp.log() in routes/main.py
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log Energy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Log Energy</h1>
+    <form method="post">
+        <label for="task">Task:</label>
+        <input type="text" name="task" required><br>
+
+        <label for="energy">Energy Spent (1-10):</label>
+        <input type="number" name="energy" min="1" max="10" required><br>
+
+        <label for="notes">Notes (optional):</label>
+        <textarea name="notes"></textarea><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <a href="{{ url_for('main.index') }}">Back to Dashboard</a>
+</body>
+</html>
+

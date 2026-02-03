@@ -1,0 +1,26 @@
+<!--
+Template: index.html
+Purpose: Displays the main dashboard with recent energy logs.
+Usage:
+  Rendered by main_bp.index() in routes/main.py
+  Expects a 'logs' variable containing EnergyLog entries.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spoons Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Energy Logs</h1>
+    <ul>
+        {% for log in logs %}
+            <li>{{ log.date.strftime('%Y-%m-%d') }} - {{ log.task }} - Energy: {{ log.energy_spent }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('main.log') }}">Add New Log</a>
+</body>
+</html>
+
