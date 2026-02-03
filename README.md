@@ -1,7 +1,9 @@
 # Spoons App
 
 **Note:** This README documents the Spoons App repository for developers and contributors.  
-The **Learning MVP** is the live user-facing version of the app, which can be accessed here: [Insert link to Learning MVP]
+
+**Learning MVP Guide:**  
+https://github.com/apinchbeck/spoons/blob/main/LEARNING_MVP.md
 
 **Spoons App helps you understand and manage your daily energy using the spoon theory.** Track your spoons, plan tasks with timing priorities, and reflect on your 
 energy usage to build self-awareness and balance.
