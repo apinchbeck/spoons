@@ -1,13 +1,28 @@
-# Node / frontend
+# Node dependencies
 node_modules/
 
-# Python (just in case later)
-__pycache__/
-*.pyc
+# Expo
+.expo/
+.expo-shared/
+web-build/
 
-# OS
-.DS_Store
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Environment
+# Environment variables
 .env
-venv/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings (optional)
+.vscode/
+.idea/
+
+# Build outputs (if any)
+dist/
+build/
+
